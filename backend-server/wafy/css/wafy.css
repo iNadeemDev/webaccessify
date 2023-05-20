@@ -1,0 +1,512 @@
+:root {
+    --wafy-primary-color: #0070ff;
+    --wafy-secondary-color: #87cefa;
+    --wafy-tertiary-color: #fff;
+    --wafy-btn-size-medium: 80px;
+    --wafy-btn-size-small: 50px;
+    --wafy-btn-size-large: 100px;
+
+    --wafy-icons-color: #000;
+    --wafy-text-color: #000;
+}
+
+.wafy-icon path {
+    fill: currentColor;
+}
+
+.wafy-btn-wrapper {
+    all: initial;
+    color: var(--wafy-primary-color);
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-weight: bold !important;
+    fill: currentColor;
+    position: fixed;
+    z-index: 999999990;
+    pointer-events: none;
+}
+
+.wafy-btn {
+    width: var(--wafy-btn-size-medium);
+    cursor: pointer;
+    display: inline-block;
+    pointer-events: auto;
+    color: var(--wafy-primary-color);
+}
+
+.wafy-widget-wrapper {
+    all: initial;
+    margin: 0;
+    padding: 0;
+    background-color: var(--wafy-primary-color);
+    position: fixed;
+    width: 33%;
+    top: 0px;
+    height: 100vh;
+    z-index: 999999995;
+    opacity: 0;
+    pointer-events: none;
+    color: #000;
+    /* Box-shadow */
+    -webkit-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.wafy-widget-show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wafy-widget-hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wafy-header-wrapper {
+    color: var(--wafy-tertiary-color);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 9.6px !important;
+    padding: 0px;
+
+}
+
+.wafy-heading {
+    font-size: 23px !important;
+    font-family: inherit !important;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.wafy-close-widget {
+    width: 25px !important;
+    cursor: pointer;
+    /* setting transition for animation */
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    -ms-transition: -ms-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+}
+
+.wafy-close-widget:hover {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.wafy-menu-wrapper {
+    color: #000;
+    height: 100vh;
+    padding: 9.6px;
+    background-color: #EFF1F5;
+    border-radius: 8px 8px;
+    box-shadow: 0 -4px 4px -4px #555;
+    overflow-y: scroll;
+    /* Hiding the scrollbar still being able to scroll */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+
+/* Hiding scrollbar in Chrome, Safari and Opera */
+.wafy-menu-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.wafy-menu-heading {
+    font-size: 20px;
+    margin: 10px 0px 12px 0px;
+    color: var(--wafy-text-color) !important;
+}
+
+.wafy-menu {
+    font-size: 17px;
+    color: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    justify-content: space-between;
+}
+
+.wafy-menu-wrapper hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.wafy-menu-card {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.wafy-profile-wrapper .wafy-menu-card {
+    padding: 1px !important;
+}
+
+.wafy-menu-card:hover {
+    /* background-color: var(--wafy-secondary-color); */
+    outline: 3px solid var(--wafy-secondary-color);
+}
+
+.wafy-menu-icons {
+    width: 25.6px;
+    margin: 8px;
+}
+
+.wafy-menu-title {
+    margin: 8px;
+    color: var(--wafy-text-color) !important;
+}
+
+.wafy-profile-wrapper .wafy-menu-title {
+    margin: 2px 2px 8px 2px !important;
+
+}
+
+/* Reset Button */
+.wafy-reset-menu {
+    border: none;
+    background-color: var(--wafy-primary-color) ;
+    color: var(--wafy-tertiary-color);
+    padding: 4.8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wafy-reset-menu svg {
+    width: 16px;
+    fill: currentColor;
+    margin: 5px;
+    left: 0px;
+}
+
+/* Wafy Widget Footer */
+.wafy-widget-footer {
+    background-color: var(--wafy-primary-color);
+    color: var(--wafy-tertiary-color);
+    margin-top: 11.2px;
+    margin-bottom: 100px;
+    padding: 11.2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.wafy-widget-footer a {
+    text-decoration: underline;
+    color: var(--wafy-tertiary-color);
+}
+
+.wafy-widget-footer svg {
+    fill: currentColor;
+    width: 0.9rem;
+
+}
+
+/* Interactive CSS */
+.wafy-widget-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wafy-active-feature {
+    background-color: var(--wafy-secondary-color)
+}
+
+
+
+/* CSS FOR ACCESSIBILITY */
+
+/* screen reader */
+.wafy-reader-highlight {
+    color: #FFFF00 !important;
+    background: #000 !important;
+}
+
+/* voice navigation */
+#wafy-interim {
+    z-index: 99999999;
+    color: azure;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #008000;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+}
+
+/* Color Features CSS Starts Here */
+
+/* dark contrast */
+.wafy-dark-contrast-set {
+    background-color: #000405 !important;
+    color: #eee !important;
+    background-image: none !important;
+}
+
+.wafy-dark-contrast-set:is(p, div, b, li, blockquote) {
+    color: #eee !important;
+}
+
+.wafy-dark-contrast-set:is(h1, h2, h3, h4, h5, h6) {
+    color: #00FF00 !important;
+}
+
+.wafy-dark-contrast-set:is(a) {
+    color: #FFFF00 !important;
+}
+
+.wafy-dark-contrast-set:is(input) {
+    border-color: #ccc !important;
+}
+
+.wafy-dark-contrast-set:is(input:focus) {
+    border-color: #fff !important;
+}
+
+.wafy-dark-contrast-set:is(textarea) {
+    border-color: #ccc !important;
+}
+
+.wafy-dark-contrast-set:is(textarea:focus) {
+    border-color: #fff !important;
+}
+
+/* high contrast */
+.wafy-high-contrast-set {
+    background-color: #fff !important;
+    color: #000 !important;
+    background-image: none !important;
+}
+
+.wafy-high-contrast-set:is(p, div, b, li, blockquote) {
+    color: #000 !important;
+}
+
+.wafy-high-contrast-set:is(h1, h2, h3, h4, h5, h6) {
+    color: #00FF00 !important;
+}
+
+.wafy-high-contrast-set:is(a) {
+    color: #0000FF !important;
+}
+
+.wafy-high-contrast-set:is(input) {
+    border-color: #888 !important;
+}
+
+.wafy-high-contrast-set:is(input:focus) {
+    border-color: #000 !important;
+}
+
+.wafy-high-contrast-set:is(textarea) {
+    border-color: #888 !important;
+}
+
+.wafy-high-contrast-set:is(textarea:focus) {
+    border-color: #000 !important;
+}
+
+/* low contrast */
+.wafy-low-contrast-set {
+    background-color: #33FFD4 !important;
+    color: #26292f !important;
+    background-image: none !important;
+}
+
+.wafy-low-contrast-set:is(p, div, b, li, blockquote) {
+    color: #26292f !important;
+}
+
+.wafy-low-contrast-set:is(h1, h2, h3, h4, h5, h6) {
+    color: #00ad03 !important;
+}
+
+.wafy-low-contrast-set:is(a) {
+    color: #3737b8 !important;
+}
+
+.wafy-low-contrast-set:is(input) {
+    border-color: #998 !important;
+}
+
+.wafy-low-contrast-set:is(input:focus) {
+    border-color: #330 !important;
+}
+
+.wafy-low-contrast-set:is(textarea) {
+    border-color: #998 !important;
+}
+
+.wafy-low-contrast-set:is(textarea:focus) {
+    border-color: #330 !important;
+}
+
+/* Content Features CSS Starts Here */
+
+/* dyslexia frindly font */
+@font-face {
+    font-family: 'OpenDyslexic-Bold';
+    /*a name to be used later*/
+    src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Bold.woff');
+    /*URL to font*/
+}
+
+.wafy-dyslexic-font {
+    font-family: OpenDyslexic-Bold !important;
+}
+
+/* text align features */
+.wafy-align-left-set {
+    text-align: left !important;
+}
+
+.wafy-align-right-set {
+    text-align: right !important;
+}
+
+.wafy-align-center-set {
+    text-align: center !important;
+}
+
+.wafy-align-justify-set {
+    text-align: justify !important;
+}
+
+/* line height */
+.wafy-line-height-set {
+    line-height: 2 !important;
+}
+
+/* text spacing */
+.wafy-text-spacing-set {
+    letter-spacing: 2px !important;
+    word-spacing: 4px !important;
+}
+
+/* highlight links */
+.wafy-highlight-links-set {
+    color: #FFFF00 !important;
+    background-color: #000 !important;
+    text-decoration: underline !important;
+}
+
+/* highlight headings */
+.wafy-highlight-headings-set {
+    color: #FFFF00 !important;
+    background-color: #000 !important;
+}
+
+
+/* CSS for other useful features */
+
+.wafy-hide-img {
+    visibility: hidden !important;
+}
+
+/* Accessible cursors */
+.wafy-white-cursor * {
+    cursor: url(../images/cur-white.png), auto !important;
+}
+
+.wafy-wh-hand-cursor {
+    cursor: url(../images/cur-white-hand.png), auto !important;
+}
+
+.wafy-black-cursor * {
+    cursor: url(../images/cur-black.png), auto !important;
+}
+
+.wafy-bl-hand-cursor {
+    cursor: url(../images/cur-black-hand.png), auto !important;
+}
+
+/* Pause Animations CSS */
+.wafy-pause-animations {
+    animation: none !important;
+    animation-duration: 0s !important;
+    animation-play-state: paused !important;
+}
+
+/* Hover Focus Element */
+.wafy-hover-focus *:hover {
+    outline-color: #FFFF00 !important;
+    outline-style: groove !important;
+    outline-width: 4px !important;
+}
+
+/* Reading Mask */
+.wafy-reading-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999996;
+    display: none;
+    pointer-events: none;
+}
+
+.wafy-reading-mask.active {
+    display: block;
+}
+
+.wafy-reading-mask .wafy-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 5px solid var(--wafy-primary-color);
+    border-bottom: 5px solid var(--wafy-secondary-color);
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+/* Reading Mask */
+#wafy-reading-guide-line {
+    position: fixed;
+    left: 0;
+    width: 550px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--wafy-secondary-color);
+    border: 3px solid var(--wafy-primary-color);
+    z-index: 999999996;
+    pointer-events: none;
+}
+
+/*************************/
+
+@media screen and (max-width:1024px) {
+    #wafy-widget-wrapper {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #wafy-widget-wrapper {
+        width: 72%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #wafy-widget-wrapper {
+        width: 100%;
+    }
+}

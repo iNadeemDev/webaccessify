@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270" height="40" viewBox="0 0 270 40">
+  <defs>
+    <clipPath id="clip-text_270_40_">
+      <rect width="270" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="text_270_40_" data-name="text(270*40)" clip-path="url(#clip-text_270_40_)">
+    <rect width="270" height="40" fill="rgba(255,255,255,0)"/>
+    <g id="Group_1" data-name="Group 1" transform="matrix(0.999, -0.035, 0.035, 0.999, -607.708, -424.001)">
+      <path id="Path_1" data-name="Path 1" d="M0,0,9.418,5.638,9.37,29.659,0,36.007Z" transform="translate(595.919 447.936) rotate(-25)" fill="#00174d"/>
+      <path id="Path_2" data-name="Path 2" d="M.462,4.468,8.737,0,8.416,18.228,0,12.284Z" transform="translate(629.045 445.703) rotate(25)" fill="#00174d"/>
+      <path id="Path_3" data-name="Path 3" d="M0,0,9.55,5.738,8.588,33.777l-8,6.682Z" transform="matrix(-0.875, 0.485, -0.485, -0.875, 636.843, 483.012)" fill="#03756a"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M4.531,0,9.061,9.736H0Z" transform="matrix(1, 0.017, -0.017, 1, 600.551, 471.865)" fill="#03756a"/>
+    </g>
+    <text id="WEBACCESSIFY" transform="translate(48 33)" fill="#00174d" font-size="35" font-family="SimSun-ExtB"><tspan x="0" y="0">WEB</tspan><tspan y="0" fill="#03756a" font-family="SegoeUIEmoji, Segoe UI Emoji">ACCESSIFY</tspan></text>
+  </g>
+</svg>

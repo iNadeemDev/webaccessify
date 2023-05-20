@@ -1,0 +1,308 @@
+.About {
+    margin-top: 0rem;
+    background-image: url("/public/images/About-BG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    width: 100%;
+    height: clamp(30rem, 62vw, 62rem);
+    position: relative;
+    object-fit: cover;
+  }
+  .About .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .About .content .text h1 {
+    text-align: center;
+    color: rgb(1, 37, 71);
+    font-size: clamp(4rem, 7vw, 9rem);
+    /* margin: 23rem 5rem 5rem 5rem; */
+    margin-top: clamp(16rem,15vw,23rem);
+    margin-bottom: 4rem;
+  }
+  
+  .About .content .card {
+    background-color: rgb(255, 255, 255);
+    width: clamp(20rem, 80vw, 100rem);
+    box-shadow: 0rem 2rem 1rem rgb(100, 100, 100);
+    border-radius: 2rem;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .About .content .card .card-text h1 {
+    /* margin-top: 3rem; */
+    padding: 3rem 2rem 0rem 2rem;
+    font-size: clamp(2rem, 3vw, 4rem);
+  }
+  
+  .About .content .card .card-text p {
+    font-size: clamp(0.75rem, 2vw, 3rem);
+    text-align: justify;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+  
+  .About .content .card .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .About .content .card .images .imageContent img {
+    width: clamp(3rem, 22vw, 20rem);
+    height: clamp(3rem, 22vw, 20rem);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .About .content .card .images .imageContent p {
+    font-size: clamp(0.5rem, 2vw, 3rem);
+    font-weight: bold;
+    color: rgb(20, 20, 61);
+  }
+  
+  .container {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    background: none;
+    z-index: -1;
+  }
+  
+  .Motivation {
+    background-image: url('/public/images/imageedit_1_2687901098.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+  }
+  
+  .Motivation .Motivation-text h1,
+  .timeline .text-section h1 {
+    margin-top: 3rem;
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: rgb(20, 20, 61);
+  }
+  
+  .Motivation .Motivation-text p {
+    font-size: clamp(1rem, 3vw, 3rem);
+    padding: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: #313030;
+    width: clamp(20rem, 90vw, 90rem);
+  }
+  
+  .Vision {
+    background-image: url('/public/images/BGG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+  
+  .Vision .VisionCards {
+    margin-top: 2rem;
+    background-size: 100rem 90rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .Vision .VisionCards .VisionCard {
+    background-color: #f8fcfb69;
+    width: clamp(19rem, 37vw, 37rem);
+    margin: 3rem;
+    justify-content: center;
+    border-radius: 2.2rem;
+    box-shadow: 0rem 1.5rem 1rem rgb(148, 148, 148);
+  }
+  
+  .Vision .VisionCards .VisionCard h2 {
+    margin-top: 3rem;
+    text-align: center;
+    color: rgb(20, 20, 61);
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+  }
+  
+  .Vision .VisionCards .VisionCard p {
+    font-size: clamp(0.75rem, 2vw, 2.2rem);
+    text-align: left;
+    color: #4e4c4c;
+    margin: 2rem;
+  }
+  
+  .timeline {
+    background-color: #d0eeed;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .timeline .text-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .timeline .text-section p {
+    font-size: clamp(0.75rem, 1.75vw, 1.75rem);
+    text-align: left;
+    color: black;
+    margin: 3rem;
+  }
+  
+  /*--------------*/
+  /* The actual timeline (the vertical ruler) */
+  .timeline .timeline-containers {
+    position: relative;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline .timeline-containers::after {
+    content: '';
+    position: absolute;
+    width: 0.6rem;
+    background-color: rgb(20, 20, 61);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.3rem;
+  }
+  
+  /* Container around content */
+  .timeline-Container {
+    padding: 1rem 4rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-Container::after {
+    content: '';
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: -1.2rem;
+    background-color: rgb(20, 20, 61);
+    top: 1.5rem;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 2.2rem;
+    width: 0;
+    z-index: 1;
+    right: 3rem;
+    border: medium solid rgb(20, 20, 61);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(20, 20, 61);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 2.2rem;
+    width: 0;
+    z-index: 1;
+    left: 3rem;
+    border: medium solid rgb(20, 20, 61);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(20, 20, 61) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -13px;
+  }
+  
+  /* The actual content */
+  .Content {
+    padding: 1rem 2rem;
+    background-color: white;
+    position: relative;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Content h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(20, 20, 61);
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
+  }
+  
+  .Content p {
+    font-size: clamp(1rem, 1.75vw, 1.75rem);
+    text-align: left;
+    color: black;
+    margin: 1rem;
+  }
+  
+html {
+  font-size: 62.5%;
+}
+
+@media(max-width:998px) {
+  html {
+    font-size: 55%;
+  }
+
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 45%;
+  }
+
+}  

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-logo_48_48_">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="logo_48_48_" data-name="logo(48*48)" clip-path="url(#clip-logo_48_48_)">
+    <rect width="48" height="48" fill="rgba(255,255,255,0)"/>
+    <g id="Group_1" data-name="Group 1" transform="matrix(0.999, -0.035, 0.035, 0.999, -609.935, -420.893)">
+      <path id="Path_1" data-name="Path 1" d="M0,0,10.132,6.065,10.08,31.907,0,38.737Z" transform="translate(595.919 448.237) rotate(-25)" fill="#00174d"/>
+      <path id="Path_2" data-name="Path 2" d="M.5,4.807,9.4,0,9.054,19.609,0,13.215Z" transform="translate(631.556 445.835) rotate(25)" fill="#00174d"/>
+      <path id="Path_3" data-name="Path 3" d="M0,0,10.274,6.173,9.238,36.338.627,43.526Z" transform="matrix(-0.875, 0.485, -0.485, -0.875, 639.945, 485.972)" fill="#03756a"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M4.874,0,9.748,10.474H0Z" transform="matrix(1, 0.017, -0.017, 1, 600.902, 473.981)" fill="#03756a"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,143 @@
+import React from "react";
+import { useLogin } from "@pankod/refine-core";
+import {
+    Row,
+    Col,
+    AntdLayout,
+    Card,
+    Typography,
+    Form,
+    Input,
+    Button,
+    Checkbox,
+} from "@pankod/refine-antd";
+import "./styles.css";
+
+const { Text, Title } = Typography;
+
+export interface ILoginForm {
+    username: string;
+    password: string;
+    remember: boolean;
+}
+
+export const Login: React.FC = () => {
+    const [form] = Form.useForm<ILoginForm>();
+
+    const { mutate: login } = useLogin<ILoginForm>();
+
+    const CardTitle = (
+        <Title level={3} className="title">
+            Sign in your account
+        </Title>
+    );
+
+    return (
+        <AntdLayout className="layout">
+            <Row
+                justify="center"
+                align="middle"
+                style={{
+                    height: "100vh",
+                }}
+            >
+                <Col xs={22}>
+                    <div className="container">
+                        <div className="imageContainer">
+                            <Typography style={{ fontSize: '30px', fontWeight: 500 }}>Web Accessify</Typography>
+                        </div>
+                        <Card title={CardTitle} headStyle={{ borderBottom: 0 }}>
+                            <Form<ILoginForm>
+                                layout="vertical"
+                                form={form}
+                                onFinish={(values) => {
+                                    login(values);
+                                }}
+                                requiredMark={false}
+                                initialValues={{
+                                    remember: false,
+                                }}
+                            >
+                                <Form.Item
+                                    name="email"
+                                    label="Email"
+                                    rules={[{ required: true }]}
+                                >
+                                    <Input
+                                        size="large"
+                                        placeholder="Enter email"
+                                    />
+                                </Form.Item>
+                                <Form.Item
+                                    name="password"
+                                    label="Password"
+                                    rules={[{ required: true }]}
+                                    style={{ marginBottom: "12px" }}
+                                >
+                                    <Input
+                                        type="password"
+                                        placeholder="●●●●●●●●"
+                                        size="large"
+                                    />
+                                </Form.Item>
+                                <div style={{ marginBottom: "12px" }}>
+                                    <Form.Item
+                                        name="remember"
+                                        valuePropName="checked"
+                                        noStyle
+                                    >
+                                        <Checkbox
+                                            style={{
+                                                fontSize: "12px",
+                                            }}
+                                        >
+                                            Remember me
+                                        </Checkbox>
+                                    </Form.Item>
+
+                                    <a
+                                        style={{
+                                            float: "right",
+                                            fontSize: "12px",
+                                        }}
+                                        href="#"
+                                    >
+                                        Forgot password?
+                                    </a>
+                                </div>
+                                <Button
+                                    type="primary"
+                                    size="large"
+                                    htmlType="submit"
+                                    block
+                                >
+                                    Sign in
+                                </Button>
+                                <div
+                                    style={{
+                                        float: "right",
+                                        fontSize: "16px",
+                                        paddingTop: "15px",
+                                        paddingBottom: "5px",
+                                    }}
+                                >
+                                    Don't have an account?
+                                    <a
+                                        style={{
+                                            fontSize: "17px",
+                                            paddingTop: "25px",
+                                            margin: "5px"
+                                        }}
+                                        href="https://webaccessify.com/sign-up"
+                                    >
+                                        Sign up
+                                    </a>
+                                </div>
+                            </Form>
+                        </Card>
+                    </div>
+                </Col>
+            </Row>
+        </AntdLayout>
+    );
+};

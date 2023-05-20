@@ -1,0 +1,46 @@
+.PriceContainer{
+    background-color: #d0eeed;;
+
+}
+.PriceContainer .PriceContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.PriceContainer .PriceContent .headings h1{
+    color: #122a5e;
+    text-align: center;
+    padding-top: 10rem;
+    font-size: clamp(3rem,5vw,7rem);
+}
+
+.PriceContainer .PriceContent .Buttons{
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    border-radius: 2rem;
+    /* justify-content: center; */
+    margin: 5rem;
+    background-color: #fff;
+}
+html {
+    font-size: 62.5%;
+  }
+  
+  @media(max-width:998px) {
+    html {
+      font-size: 55%;
+    }
+  
+  }
+  
+  @media(max-width:768px) {
+    html {
+      font-size: 45%;
+    }
+  
+  }  

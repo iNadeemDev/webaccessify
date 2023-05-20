@@ -1,0 +1,28 @@
+.layout {
+    background: #E2E7E9;
+    background-size: "cover";
+  }
+  
+  .container {
+    max-width: 408px;
+    margin: auto;
+  }
+  
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: -0.04em;
+  }
+  
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .copy-message {
+    z-index: 9999;
+  }
+  
