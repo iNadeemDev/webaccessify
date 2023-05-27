@@ -9,7 +9,7 @@
 <p>1. Clone this repository to your local machine.</p>
 
 ```
-git clone https://github.com/your-username/webaccessify-portfolio.git
+git clone [https://github.com/your-username/webaccessify-portfolio.git](https://github.com/iNadeemDev/webaccessify/tree/main/webaccessify-portfolio
 ```
 
 <p>2. Navigate to the webaccessify-portfolio directory.</p>
@@ -18,7 +18,7 @@ git clone https://github.com/your-username/webaccessify-portfolio.git
 cd webaccessify-portfolio
 ```
 
-<p>3. Install the required dependencies using npm or yarn.</p>
+<p>3. Install the required dependencies using npm.</p>
 
 ```
 npm install
