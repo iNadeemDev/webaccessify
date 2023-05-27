@@ -19,9 +19,6 @@ To set up and run the backend server locally, follow the instructions provided i
 # Contributing
 We welcome contributions from the open source community to enhance and improve Web Accessify. If you are interested in contributing, please refer to our contribution guidelines for more details.
 
-# License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute the code within the terms of the license.
-
 # Contact
 If you have any questions, suggestions, or feedback regarding Web Accessify, please don't hesitate to reach out to our team at nadeemdev@outlook.com.
 
