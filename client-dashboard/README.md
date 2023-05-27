@@ -34,6 +34,17 @@ npm start
 
 <p>6. Open your web browser and visit http://localhost:5005 to access the Web Accessify Client Dashboard.</p>
 
+<h2>Deployment</h2>
+<p>To deploy the Web Accessify Client Dashboard to a production environment, follow the deployment steps specific to your hosting provider or infrastructure. Generally, the process involves building the production-ready assets and deploying them to a web server.</p>
+
+<p>1. Build the optimized production build.</p>
+
+```
+npm run build
+```
+
+<p>2. The build files will be generated in the build directory. You can deploy these files to your preferred hosting provider or web server.</p>
+
 <h2>💖Like my work?</h2>
 
 If you have any questions suggestions or feedback regarding Web Accessify please don't hesitate to reach out to our team at nadeemdev@outlook.com. We hope that Web Accessify makes web accessibility more accessible and inclusive for everyone. Thank you for your interest and support!
