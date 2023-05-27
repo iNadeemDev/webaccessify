@@ -29,7 +29,7 @@ npm install
 <p>5. Start the development server.</p>
 
 ```
-npm start
+npm start dev
 ```
 
 <p>6. Open your web browser and visit http://localhost:5005 to access the Web Accessify Client Dashboard.</p>
